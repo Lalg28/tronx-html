@@ -50,7 +50,8 @@ body {
         }
 
         & .nav {
-            display: block;
+            display: flex;
+            align-items: center;
             & ul {
                 display: flex;
                 align-items: center;
@@ -79,6 +80,38 @@ body {
                             margin: 0;
                         }
                     }
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & a {
+                height: 31px;
+
+                &:first-of-type {
+                    margin-right: 16px;
+                }
+            }
+            & .lenguage {
+                margin-left: 40px;
+                margin-right: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+                position: relative;
+
+                & p{
+                    position: absolute;
+                }
+
+                &:hover{
+                    cursor: pointer;
                 }
             }
         }
