@@ -1,0 +1,349 @@
+.contacto-hero {
+    height: 493px;
+    width: 100%;
+    background: url('../img/contacto/mundo-surf-tronx.png') no-repeat -33rem center;
+    color: white;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(10px);
+
+    &::before {
+        content: '';
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1) 45%, black 150%);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .title-container {
+        height: 300px;
+        padding-left: 40px;
+        & h1 {
+            margin: 0;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 300;
+            max-width: 200px;
+    
+            & span {
+                font-weight: 500;
+            }
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        background-position: center;
+        height: 700px;
+        display: flex;
+        align-items: normal;
+        justify-content: center;
+
+        &::before {
+            content: '';
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 45%, black 250%);
+        }
+
+        .title-container {
+            height: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 70%;
+
+            & h1 {
+                font-size: 34px;
+                line-height: 40px;
+                max-width: 459px;
+            }
+        }
+    }
+}
+
+.contact-info {
+    & h1 {
+        font-size: 28px;
+        line-height: 22px;
+        color: $red;
+        padding: 0 38px;
+        margin-bottom: 26px;
+        margin-top: 50px;
+    }
+
+    .information {
+        margin-bottom: 50px;
+        & p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            padding: 0 38px;
+    
+            & span {
+                color: $blue;
+                font-weight: 700;
+            }
+        }
+    }
+
+    & img {
+        width: 100%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        z-index: 1;
+        
+        .information {
+            position: relative;
+            z-index: 2;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding-right: 100px;
+
+            & h1 {
+                width: 330px;
+                padding: 0;
+                font-size: 50px;
+                font-weight: bold;
+                line-height: 52px;
+            }
+            
+            & p {
+                width: 330px;
+                padding: 0;
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+
+        & img {
+            width: 40%;
+        }
+
+        .section-bg {
+            position: absolute;
+            background-position: center;
+            width: 700px;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+        }
+
+    }
+}
+
+.section-bg {
+    width: 100%;
+    height: 400px;
+    background: url('../img/contacto/contacto-bg.png') no-repeat -50px center;
+}
+
+.mapa {
+    width: 100%;
+    height: 554px;
+}
+
+.contact-form {
+    position: relative;
+    z-index: 2;
+
+    .form-header {
+        background: url(../img/nosotros/deporte-acuatico-tronx.png) no-repeat center;
+        height: 264px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+        padding: 0 38px;
+        text-align: center;
+
+        & h1 {
+            font-size: 28px;
+            line-height: 30px;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 6px;
+        }
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    & .form {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 38px;
+    }
+
+    & .field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 100%;
+
+        & label {
+            font-size: 18px;
+            color: $blue;
+            font-weight: bold;
+            line-height: 26px;
+            margin-bottom: 6px;
+        }
+
+        & input,
+        & textarea {
+            width: 100%;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 1px solid $blue;
+            padding: 6px;
+            text-align: center;
+        }
+    }
+
+    .boletin {
+        position: relative;
+        z-index: 3;
+        padding: 0 38px;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 300px;
+        
+        & .boletin-form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        & h2 {
+            font-size: 28px;
+            line-height: 30px;
+            color: $red;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        & p {
+            margin-bottom: 32px;
+        }
+    }
+
+    .form-bg-mobile {
+        background: url(../img/contacto/form-bg-mobile.png) no-repeat center;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        bottom: -300px;
+        z-index: 0;
+    }
+
+    .form-bg-desktop-left {
+        display: none;
+    }
+
+    .form-bg-desktop-right {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        .form-header {
+            background-size: cover;
+            & h1 {
+                font-size: 50px;
+                line-height: 52px;
+                margin-bottom: 25px;
+                max-width: 640px;
+            }
+        }
+
+        & p {
+            font-size: 20px;
+            line-height: 26px;
+            max-width: 640px;
+        }
+
+        & .form {
+            margin-top: 120px;
+            padding: 0;
+        }
+
+        & .field {
+            max-width: 580px;
+
+            & input,
+            & textarea {
+                font-size: 18px;
+                line-height: 26px;
+            }
+
+            & textarea {
+                resize: none;
+            }
+        }
+
+        & .boletin {
+            margin-top: 130px;
+            margin-bottom: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & h2 {
+                font-size: 50px;
+                line-height: 52px;
+                margin-bottom: 20px;
+            }
+
+            & p {
+                margin-bottom: 64px;
+            }
+        }
+
+        .form-bg-mobile {
+            display: none;
+        }
+
+        .form-bg-desktop-left {
+            display: block;
+            background: url(../img/contacto/bg-contact-desktop-left.png) no-repeat right top;
+            background-size: cover;
+            height: 80%;
+            width: 35%;
+            position: absolute;
+            bottom: -120px;
+            left: 0;
+            z-index: 0;
+        }
+
+        .form-bg-desktop-right {
+            display: block;
+            background: url(../img/contacto/contact-bg-desktop-right.png) no-repeat left;
+            background-size: cover;
+            height: 80%;
+            width: 48%;
+            position: absolute;
+            bottom: -120px;
+            right: 0;
+            z-index: 0;
+        }
+    }
+}

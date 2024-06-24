@@ -1,0 +1,521 @@
+
+.hero-escuela {
+    height: 431px;
+    width: 100%;
+    background: url(../img/escuela/escuela-profesional-surf.png) no-repeat center center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+
+    &::before {
+        content: '';
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 45%, black 150%);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    & .title-container {
+        height: 90%;
+        display: flex;
+        align-items: flex-end;
+      & h1.title {
+        margin: 0;
+        color: white;
+        font-size: 30px;
+        line-height: 34px;
+        font-weight: 300;
+        padding: 0 27px;
+
+        & span {
+            font-weight: 700;
+        }
+      }  
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 622px;
+        display: flex;
+        align-items: normal;
+        justify-content: center;
+
+        &::before {
+            content: '';
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 45%, black 250%);
+        }
+
+        & .title-container {
+            height: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 65%;
+
+            & h1.title {
+                font-size: 50px;
+                line-height: 52px;
+                max-width: 450px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+section.escuela {
+    & h1 {
+        color: $red;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+
+        & strong {
+            font-weight: 700;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        & h1 {
+            font-size: 50px;
+            line-height: 52px;
+        }
+
+        & p {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+}
+
+.second-section-escuela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & .container {
+        margin-top: 50px;
+
+        &__left {
+            & h1, & p, & h2 {
+                padding: 0 45px;
+                margin: 0;
+            }
+
+            & p {
+                margin: 15px 0;
+            }
+
+            & h2 {
+                font-size: 22px;
+                line-height: 26px;
+                color: $blue;
+                margin-bottom: 8px;
+            }
+        }
+
+        &__right {
+            & .escuela-bg {
+                width: 100%;
+                height: 400px;
+                background: url(../img/escuela/lecciones-cursos-surf.png) no-repeat 70% top;
+                background-size: cover;
+            }
+        }
+    }
+
+    & .apartados {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 34px;
+
+        & .figure-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            & .figure {
+                position: relative;
+                width: 215px;
+                height: 250px;
+                background-color: $red;
+                clip-path: polygon(
+                    50% 100%, /* Bottom middle */
+                    100% 75%, /* Bottom right */
+                    100% 25%, /* Top right */
+                    50% 0%,   /* Top middle */
+                    0% 25%,   /* Top left */
+                    0% 75%    /* Bottom left */
+                );
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                margin: 8px 0;
+            }
+
+            & p > span {
+                color: $red;
+                font-weight: 700;
+            }
+        }
+    }
+
+    & button {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        & .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            position: relative;
+            height: 500px;
+
+            &__left {
+                position: relative;
+                z-index: 2;
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                & .content {
+                    width: 70%;
+
+                    & h1, & p, & h2 {
+                        padding: 0;
+                    }
+
+                    & span {
+                        font-size: 30px;
+                        line-height: 34px;
+                    }
+                }
+            }
+
+            &__right {  
+                width: 30%;
+
+                & .escuela-bg {
+                    position: absolute;
+                    z-index: 1;
+                    right: 0;
+                    height: 600px;
+                    background-position: center;
+                    width: 60%;
+                }
+            }
+        }
+
+        & .apartados {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0;
+
+            & .figure-container {
+                margin: 0 10px;
+                width: 340px;
+
+                & h1 {
+                    font-size: 42px;
+                    line-height: 52px;
+                }
+            }
+        }
+
+        & button {
+            margin-top: 75px;
+        }
+    }
+}
+
+.third-section-escuela {
+    margin-top: 100px;
+    & .container {
+        &__left {
+            & .surf-escuela {
+                background: url(../img/escuela/surf-escuela.png) no-repeat 35% center;
+                background-size: cover;
+                height: 460px;
+                width: 100%;
+            }
+        }
+
+        &__right {
+            padding: 0 45px;
+            height: 390px;
+            background: url(../img/escuela/bg-escuela.png) no-repeat 70% center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            
+            & p, & h1 {
+                color: white;
+                margin: 0;
+            }
+
+            & h1 {
+                max-width: 175px;
+                margin-bottom: 18px;
+            }
+        }
+
+        & .content-desktop {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 140px;
+
+        & .container {
+            display: flex;
+            position: relative;
+            height: 585px;
+            align-items: center;
+
+            &__left {
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                z-index: 2;
+                height: 100%;
+                 
+                & .surf-escuela {
+                    background-position: center;
+                    height: 100%;
+                }
+            }
+
+            &__right {
+                right: 0;
+                top: 0;
+                position: absolute;
+                width: 100%;
+                background-position: -10rem center;
+                z-index: 1;
+                height: 100%;
+
+                & .content {
+                    display: none;
+                }
+            }
+
+            & .content-desktop {
+                display: inline-block;
+                position: absolute;
+                z-index: 3;
+                color: white;
+                right: 10%;
+
+                & h1 {
+                    color: white;
+                    width: 300px;
+                }
+
+                & p {
+                    width: 440px;
+                }
+            }
+        }
+    }
+}
+
+
+.main-title {
+    font-size: 57px !important;
+    font-weight: bold!important;
+    font-style: italic !important;
+    background-color: #2f8d46;
+    background-image: url(../img/text-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: transparent !important;
+    background-clip: text;
+    text-transform: uppercase;
+    margin: 0;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 200px!important;
+        line-height: 200px!important;
+    }
+}
+
+.fourth-section-escuela {
+    margin-top: 85px;
+
+    
+    & h1.main-title {
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 140px;
+    }
+}
+
+.columns {
+    margin-top: 70px;
+    &__left {
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__right {
+        padding: 0 30px;
+        & h1 {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 34px;
+            color: $red;
+            margin: 50px 0 15px 0;
+        }
+
+        & p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: center;
+    
+            & strong {
+                font-weight: 700;
+            }
+
+            & span {
+                color: $blue;
+
+                &.red {
+                    color: $red;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+
+        &__left {
+            width: 45%;
+        }
+
+        &__right {
+            width: 55%;
+            padding-left: 100px;
+            
+            & h1 {
+                text-align: left;
+                width: 530px;
+                margin: 0;
+            }
+
+            & p {
+                text-align: left;
+                width: 530px;
+            }
+        }
+
+        &.order {
+            & .columns__left {
+                order: 1;
+            }
+
+            & .columns__right {
+                position: relative;
+                padding-left: 0;
+                padding-right: 100px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-end;
+
+                & .button-container {
+                    width: 530px;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+
+.fifth-section-escuela {
+    background: $blue;
+    padding: 40px 0;
+    margin-top: 135px;
+
+    & .main-title {
+        color: white!important;
+        text-align: center;
+    }
+
+    & .columns {
+        color: white;
+
+        & h1 {
+            color: white;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 100px 0;
+    }
+}
+
+.sixth-section-escula {
+    margin-top: 30px;
+
+    & h1.main-title {
+        text-align: center;
+    }
+
+    & .columns:first-of-type {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 100px;
+        
+        & .columns:first-of-type {
+            margin-top: 100px;
+        }
+    }
+}
+
+.seventh-section-escula {
+    margin: 100px 0;
+
+    & h1.main-title {
+        text-align: center;
+    }
+
+    & .columns {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        & .columns:first-of-type {
+            margin-top: 100px;
+        }
+    }
+}

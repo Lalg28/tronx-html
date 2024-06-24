@@ -1,0 +1,233 @@
+.hero-nosotros {
+    position: relative;
+    background: url("../img/nosotros/deporte-acuatico-tronx.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 60px 25px 60px 42px;
+
+    & .surf-img {
+        display: none;
+    }
+
+    & h1.title {
+        font-size: 30px;
+        line-height: 34px;
+        margin: 0;
+        font-weight: 300;
+        margin-bottom: 9px;
+        
+        & span {
+            font-weight: 700;
+        }
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+        margin-bottom: 27px;
+        font-weight: 300;
+
+        & span {
+            font-weight: 700;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 60px 250px 60px 250px;
+
+        & h1.title {
+            max-width: 560px;
+            font-size: 50px;
+            line-height: 52px;
+            margin-bottom: 34px;
+        }
+
+        & p.description {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.members-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+
+    & .member-card {
+        margin-bottom: 57px;
+        width: 300px;
+        
+        &___image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        &__content {
+            & h2 {
+                margin: 15px 0 8px 0;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 34px;
+            }
+
+            & p {
+                margin: 0;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+        }
+
+        & hr {
+            height: 2px;
+            width: 48px;
+            background: $red;
+            border: none;
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        margin-top: 100px;
+        align-items: normal;
+        gap: 21px;
+
+        & .member-card {
+            margin-bottom: 0;
+            width: auto;
+
+            &__content {
+                & h2 {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+
+                & p {
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            
+            }
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+.second-us {
+    margin-top: 70px;
+    
+    & h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 30px;
+        font-weight: 34px;
+        padding: 0 46px;
+        margin-bottom: 9px;
+        color: $red;
+    }
+
+    & p {
+        margin: 0;
+        font-weight: 100;
+        line-height: 22px;
+        font-size: 16px;
+        padding: 0 46px;
+        margin-bottom: 83px;
+
+        & span {
+            font-weight: 700;
+        }
+    }
+
+    & img {
+        width: 100%;
+    }
+
+    & .background-desktop {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 0;
+
+        display: flex;
+        align-items: center;
+
+        & .content {
+            order: 1;
+            padding-left: 150px;
+
+            & h1 {
+                font-size: 50px;
+                line-height: 52px;
+                max-width: 365px;
+                margin-bottom: 17px;
+                padding: 0;
+            }
+
+            & p {
+                font-size: 18px;
+                line-height: 24px;
+                max-width: 400px;
+                margin-bottom: 0;
+                padding: 0;
+            }
+        }
+
+        & img {
+            width: 50%;
+        }
+
+        &.second {
+            position: relative;
+
+            & .content {
+                order: 0;
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-left: 0;
+                padding-right: 130px;
+
+                & h1 {
+                    padding: 0;
+                    max-width: 400px;
+                }
+
+                & p {
+                    padding: 0;
+                }
+            }
+
+            & .background-desktop {
+                display: block;
+                position: absolute;
+                height: 100%;
+                width: 20%;
+                left: 0;
+                background: url("../img/nosotros/tronx-bg.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 0;
+            }
+        }
+    }
+}

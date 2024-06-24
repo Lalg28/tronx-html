@@ -1,15 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 .header {
   background: #545454;
   max-height: 65px;
@@ -622,6 +610,965 @@ footer .second-footer-section .social {
     order: 1;
     margin-top: 0;
   }
+}
+
+.hero-nosotros {
+  position: relative;
+  background: url("../img/nosotros/deporte-acuatico-tronx.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 25px 60px 42px;
+}
+.hero-nosotros .surf-img {
+  display: none;
+}
+.hero-nosotros h1.title {
+  font-size: 30px;
+  line-height: 34px;
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 9px;
+}
+.hero-nosotros h1.title span {
+  font-weight: 700;
+}
+.hero-nosotros p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 27px;
+  font-weight: 300;
+}
+.hero-nosotros p span {
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .hero-nosotros {
+    padding: 60px 250px 60px 250px;
+  }
+  .hero-nosotros h1.title {
+    max-width: 560px;
+    font-size: 50px;
+    line-height: 52px;
+    margin-bottom: 34px;
+  }
+  .hero-nosotros p.description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+}
+
+.members-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-direction: column;
+}
+.members-cards-container .member-card {
+  margin-bottom: 57px;
+  width: 300px;
+}
+.members-cards-container .member-card___image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.members-cards-container .member-card__content h2 {
+  margin: 15px 0 8px 0;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 34px;
+}
+.members-cards-container .member-card__content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.members-cards-container .member-card hr {
+  height: 2px;
+  width: 48px;
+  background: #C40712;
+  border: none;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .members-cards-container {
+    flex-direction: row;
+    margin-top: 100px;
+    align-items: normal;
+    gap: 21px;
+  }
+  .members-cards-container .member-card {
+    margin-bottom: 0;
+    width: auto;
+  }
+  .members-cards-container .member-card__content h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .members-cards-container .member-card__content p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .members-cards-container .member-card:nth-child(1), .members-cards-container .member-card:nth-child(3) {
+    margin-top: 50px;
+  }
+}
+
+.second-us {
+  margin-top: 70px;
+}
+.second-us h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: 34px;
+  padding: 0 46px;
+  margin-bottom: 9px;
+  color: #C40712;
+}
+.second-us p {
+  margin: 0;
+  font-weight: 100;
+  line-height: 22px;
+  font-size: 16px;
+  padding: 0 46px;
+  margin-bottom: 83px;
+}
+.second-us p span {
+  font-weight: 700;
+}
+.second-us img {
+  width: 100%;
+}
+.second-us .background-desktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .second-us {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  .second-us .content {
+    order: 1;
+    padding-left: 150px;
+  }
+  .second-us .content h1 {
+    font-size: 50px;
+    line-height: 52px;
+    max-width: 365px;
+    margin-bottom: 17px;
+    padding: 0;
+  }
+  .second-us .content p {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 400px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .second-us img {
+    width: 50%;
+  }
+  .second-us.second {
+    position: relative;
+  }
+  .second-us.second .content {
+    order: 0;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 0;
+    padding-right: 130px;
+  }
+  .second-us.second .content h1 {
+    padding: 0;
+    max-width: 400px;
+  }
+  .second-us.second .content p {
+    padding: 0;
+  }
+  .second-us.second .background-desktop {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: 0;
+    background: url("../img/nosotros/tronx-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+
+.contacto-hero {
+  height: 493px;
+  width: 100%;
+  background: url("../img/contacto/mundo-surf-tronx.png") no-repeat -33rem center;
+  color: white;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.contacto-hero::before {
+  content: "";
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1) 45%, black 150%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.contacto-hero .title-container {
+  height: 300px;
+  padding-left: 40px;
+}
+.contacto-hero .title-container h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  max-width: 200px;
+}
+.contacto-hero .title-container h1 span {
+  font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .contacto-hero {
+    background-position: center;
+    height: 700px;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+  }
+  .contacto-hero::before {
+    content: "";
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 45%, black 250%);
+  }
+  .contacto-hero .title-container {
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+  }
+  .contacto-hero .title-container h1 {
+    font-size: 34px;
+    line-height: 40px;
+    max-width: 459px;
+  }
+}
+
+.contact-info h1 {
+  font-size: 28px;
+  line-height: 22px;
+  color: #C40712;
+  padding: 0 38px;
+  margin-bottom: 26px;
+  margin-top: 50px;
+}
+.contact-info .information {
+  margin-bottom: 50px;
+}
+.contact-info .information p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 38px;
+}
+.contact-info .information p span {
+  color: #22637E;
+  font-weight: 700;
+}
+.contact-info img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .contact-info {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+  }
+  .contact-info .information {
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 100px;
+  }
+  .contact-info .information h1 {
+    width: 330px;
+    padding: 0;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 52px;
+  }
+  .contact-info .information p {
+    width: 330px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .contact-info img {
+    width: 40%;
+  }
+  .contact-info .section-bg {
+    position: absolute;
+    background-position: center;
+    width: 700px;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+  }
+}
+
+.section-bg {
+  width: 100%;
+  height: 400px;
+  background: url("../img/contacto/contacto-bg.png") no-repeat -50px center;
+}
+
+.mapa {
+  width: 100%;
+  height: 554px;
+}
+
+.contact-form {
+  position: relative;
+  z-index: 2;
+}
+.contact-form .form-header {
+  background: url(../img/nosotros/deporte-acuatico-tronx.png) no-repeat center;
+  height: 264px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  padding: 0 38px;
+  text-align: center;
+}
+.contact-form .form-header h1 {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 6px;
+}
+.contact-form p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  margin: 0;
+}
+.contact-form .form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 38px;
+}
+.contact-form .field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.contact-form .field label {
+  font-size: 18px;
+  color: #22637E;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 6px;
+}
+.contact-form .field input, .contact-form .field textarea {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #22637E;
+  padding: 6px;
+  text-align: center;
+}
+.contact-form .boletin {
+  position: relative;
+  z-index: 3;
+  padding: 0 38px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 300px;
+}
+.contact-form .boletin .boletin-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-form .boletin h2 {
+  font-size: 28px;
+  line-height: 30px;
+  color: #C40712;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.contact-form .boletin p {
+  margin-bottom: 32px;
+}
+.contact-form .form-bg-mobile {
+  background: url(../img/contacto/form-bg-mobile.png) no-repeat center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  bottom: -300px;
+  z-index: 0;
+}
+.contact-form .form-bg-desktop-left {
+  display: none;
+}
+.contact-form .form-bg-desktop-right {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .contact-form .form-header {
+    background-size: cover;
+  }
+  .contact-form .form-header h1 {
+    font-size: 50px;
+    line-height: 52px;
+    margin-bottom: 25px;
+    max-width: 640px;
+  }
+  .contact-form p {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 640px;
+  }
+  .contact-form .form {
+    margin-top: 120px;
+    padding: 0;
+  }
+  .contact-form .field {
+    max-width: 580px;
+  }
+  .contact-form .field input, .contact-form .field textarea {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .contact-form .field textarea {
+    resize: none;
+  }
+  .contact-form .boletin {
+    margin-top: 130px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact-form .boletin h2 {
+    font-size: 50px;
+    line-height: 52px;
+    margin-bottom: 20px;
+  }
+  .contact-form .boletin p {
+    margin-bottom: 64px;
+  }
+  .contact-form .form-bg-mobile {
+    display: none;
+  }
+  .contact-form .form-bg-desktop-left {
+    display: block;
+    background: url(../img/contacto/bg-contact-desktop-left.png) no-repeat right top;
+    background-size: cover;
+    height: 80%;
+    width: 35%;
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    z-index: 0;
+  }
+  .contact-form .form-bg-desktop-right {
+    display: block;
+    background: url(../img/contacto/contact-bg-desktop-right.png) no-repeat left;
+    background-size: cover;
+    height: 80%;
+    width: 48%;
+    position: absolute;
+    bottom: -120px;
+    right: 0;
+    z-index: 0;
+  }
+}
+
+.hero-escuela {
+  height: 431px;
+  width: 100%;
+  background: url(../img/escuela/escuela-profesional-surf.png) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+.hero-escuela::before {
+  content: "";
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 45%, black 150%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.hero-escuela .title-container {
+  height: 90%;
+  display: flex;
+  align-items: flex-end;
+}
+.hero-escuela .title-container h1.title {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 300;
+  padding: 0 27px;
+}
+.hero-escuela .title-container h1.title span {
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .hero-escuela {
+    height: 622px;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+  }
+  .hero-escuela::before {
+    content: "";
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 45%, black 250%);
+  }
+  .hero-escuela .title-container {
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 65%;
+  }
+  .hero-escuela .title-container h1.title {
+    font-size: 50px;
+    line-height: 52px;
+    max-width: 450px;
+    padding: 0;
+  }
+}
+
+section.escuela h1 {
+  color: #C40712;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+}
+section.escuela p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+section.escuela p strong {
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  section.escuela h1 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  section.escuela p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.second-section-escuela {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.second-section-escuela .container {
+  margin-top: 50px;
+}
+.second-section-escuela .container__left h1, .second-section-escuela .container__left p, .second-section-escuela .container__left h2 {
+  padding: 0 45px;
+  margin: 0;
+}
+.second-section-escuela .container__left p {
+  margin: 15px 0;
+}
+.second-section-escuela .container__left h2 {
+  font-size: 22px;
+  line-height: 26px;
+  color: #22637E;
+  margin-bottom: 8px;
+}
+.second-section-escuela .container__right .escuela-bg {
+  width: 100%;
+  height: 400px;
+  background: url(../img/escuela/lecciones-cursos-surf.png) no-repeat 70% top;
+  background-size: cover;
+}
+.second-section-escuela .apartados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 34px;
+}
+.second-section-escuela .apartados .figure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.second-section-escuela .apartados .figure-container .figure {
+  position: relative;
+  width: 215px;
+  height: 250px;
+  background-color: #C40712;
+  clip-path: polygon(50% 100%, 100% 75%, 100% 25%, 50% 0%, 0% 25%, 0% 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 8px 0;
+}
+.second-section-escuela .apartados .figure-container p > span {
+  color: #C40712;
+  font-weight: 700;
+}
+.second-section-escuela button {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .second-section-escuela .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    height: 500px;
+  }
+  .second-section-escuela .container__left {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .second-section-escuela .container__left .content {
+    width: 70%;
+  }
+  .second-section-escuela .container__left .content h1, .second-section-escuela .container__left .content p, .second-section-escuela .container__left .content h2 {
+    padding: 0;
+  }
+  .second-section-escuela .container__left .content span {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  .second-section-escuela .container__right {
+    width: 30%;
+  }
+  .second-section-escuela .container__right .escuela-bg {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: 600px;
+    background-position: center;
+    width: 60%;
+  }
+  .second-section-escuela .apartados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .second-section-escuela .apartados .figure-container {
+    margin: 0 10px;
+    width: 340px;
+  }
+  .second-section-escuela .apartados .figure-container h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .second-section-escuela button {
+    margin-top: 75px;
+  }
+}
+
+.third-section-escuela {
+  margin-top: 100px;
+}
+.third-section-escuela .container__left .surf-escuela {
+  background: url(../img/escuela/surf-escuela.png) no-repeat 35% center;
+  background-size: cover;
+  height: 460px;
+  width: 100%;
+}
+.third-section-escuela .container__right {
+  padding: 0 45px;
+  height: 390px;
+  background: url(../img/escuela/bg-escuela.png) no-repeat 70% center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.third-section-escuela .container__right p, .third-section-escuela .container__right h1 {
+  color: white;
+  margin: 0;
+}
+.third-section-escuela .container__right h1 {
+  max-width: 175px;
+  margin-bottom: 18px;
+}
+.third-section-escuela .container .content-desktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .third-section-escuela {
+    margin-top: 140px;
+  }
+  .third-section-escuela .container {
+    display: flex;
+    position: relative;
+    height: 585px;
+    align-items: center;
+  }
+  .third-section-escuela .container__left {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+  }
+  .third-section-escuela .container__left .surf-escuela {
+    background-position: center;
+    height: 100%;
+  }
+  .third-section-escuela .container__right {
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    background-position: -10rem center;
+    z-index: 1;
+    height: 100%;
+  }
+  .third-section-escuela .container__right .content {
+    display: none;
+  }
+  .third-section-escuela .container .content-desktop {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    color: white;
+    right: 10%;
+  }
+  .third-section-escuela .container .content-desktop h1 {
+    color: white;
+    width: 300px;
+  }
+  .third-section-escuela .container .content-desktop p {
+    width: 440px;
+  }
+}
+
+.main-title {
+  font-size: 57px !important;
+  font-weight: bold !important;
+  font-style: italic !important;
+  background-color: #2f8d46;
+  background-image: url(../img/text-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  color: transparent !important;
+  background-clip: text;
+  text-transform: uppercase;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .main-title {
+    font-size: 200px !important;
+    line-height: 200px !important;
+  }
+}
+
+.fourth-section-escuela {
+  margin-top: 85px;
+}
+.fourth-section-escuela h1.main-title {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .fourth-section-escuela {
+    margin-top: 140px;
+  }
+}
+
+.columns {
+  margin-top: 70px;
+}
+.columns__left img {
+  width: 100%;
+  height: 100%;
+}
+.columns__right {
+  padding: 0 30px;
+}
+.columns__right h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+  color: #C40712;
+  margin: 50px 0 15px 0;
+}
+.columns__right p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+}
+.columns__right p strong {
+  font-weight: 700;
+}
+.columns__right p span {
+  color: #22637E;
+}
+.columns__right p span.red {
+  color: #C40712;
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .columns {
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+  }
+  .columns__left {
+    width: 45%;
+  }
+  .columns__right {
+    width: 55%;
+    padding-left: 100px;
+  }
+  .columns__right h1 {
+    text-align: left;
+    width: 530px;
+    margin: 0;
+  }
+  .columns__right p {
+    text-align: left;
+    width: 530px;
+  }
+  .columns.order .columns__left {
+    order: 1;
+  }
+  .columns.order .columns__right {
+    position: relative;
+    padding-left: 0;
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .columns.order .columns__right .button-container {
+    width: 530px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.fifth-section-escuela {
+  background: #22637E;
+  padding: 40px 0;
+  margin-top: 135px;
+}
+.fifth-section-escuela .main-title {
+  color: white !important;
+  text-align: center;
+}
+.fifth-section-escuela .columns {
+  color: white;
+}
+.fifth-section-escuela .columns h1 {
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .fifth-section-escuela {
+    padding: 100px 0;
+  }
+}
+
+.sixth-section-escula {
+  margin-top: 30px;
+}
+.sixth-section-escula h1.main-title {
+  text-align: center;
+}
+.sixth-section-escula .columns:first-of-type {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .sixth-section-escula {
+    margin-top: 100px;
+  }
+  .sixth-section-escula .columns:first-of-type {
+    margin-top: 100px;
+  }
+}
+
+.seventh-section-escula {
+  margin: 100px 0;
+}
+.seventh-section-escula h1.main-title {
+  text-align: center;
+}
+.seventh-section-escula .columns {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .seventh-section-escula .columns:first-of-type {
+    margin-top: 100px;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tronx - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="./img/tronx-red-logo.svg" alt="Logo">
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/escuela.html">Escuela</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="#">Reservar</a></li>
+            </ul>
+
+            <div class="social">
+                <div class="lenguage">
+                    <img src="./img/lenguage-icon.svg" alt="lng">
+                    <p>EN</p>
+                </div>
+                <a href="https://www.facebook.com/TRONX.mx" target="_blank">
+                    <img src="./img/facebook.svg" alt="fb" width="31">
+                </a>
+                <a href="https://www.instagram.com/tronxteam" target="_blank">
+                    <img src="./img/instagram.svg" alt="ig" width="31">
+                </a>
+            </div>
+        </nav>
+        <img class="menu" src="./img/menu.png" alt="Menu">
+    </header>
+
+    <div class="contacto-hero">
+        <div class="title-container">
+            <h1 class="title">
+                <span>¡Estamos emocionados de escucharte y ayudarte a sumergirte en el emocionante mundo del
+                    surf!</span> Si
+                tienes
+                preguntas, comentarios o simplemente
+                quieres ponerte
+                en contacto con nosotros, no dudes
+                en hacerlo.
+            </h1>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <div class="information">
+            <h1>Encuéntranos</h1>
+
+            <p><span>Dirección:</span> Paseo de la Marina,<br />
+                Condominios El Muelle, Local 1</p>
+
+            <p><span>Teléfono:</span> +52 322 297 1448
+                <br /><span>Correo:</span> info@tronx.mx
+            </p>
+
+            <p><span>Horario de atención:<br /></span>
+                <strong>Lunes a Sábados:</strong> 8:00 AM - 8:00 PM
+                <br /><strong>Domingo:</strong> 8:00 AM - 4:00 PM
+            </p>
+        </div>
+
+        <div class="section-bg"></div>
+
+        <img src="./img/contacto/clases-de-sur-tronx.png" alt="contacto">
+    </div>
+
+    <div class="mapa" id="map"></div>
+
+    <div class="contact-form">
+        <div class="form-header">
+            <h1>¿Tienes dudas específicas?</h1>
+            <p>Si prefieres, también puedes completar el formulario de contacto a continuación y te responderemos a la
+                brevedad.</p>
+        </div>
+
+        <form action="" class="form">
+            <div class="field">
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+            </div>
+            <div class="field">
+                <label for="email">Correo</label>
+                <input type="email" id="email">
+            </div>
+            <div class="field">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto">
+            </div>
+            <div class="field">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <button class="button button__contained">Enviar</button>
+        </form>
+
+        <div class="boletin">
+            <h2>¡No te pierdas de
+                la diversión!</h2>
+            <p>
+                Regístrate a nuestro boletin informativo y recibe avisos de eventos, promociones y horarios de clases.
+            </p>
+            <form action="" class="boletin-form">
+                <div class="field">
+                    <label for="email">Correo electrónico</label>
+                    <input type="text" id="email">
+                </div>
+                <button class="button button__contained">Suscribirme</button>
+            </form>
+        </div>
+        <div class="form-bg-mobile"></div>
+        <div class="form-bg-desktop-left"></div>
+        <div class="form-bg-desktop-right"></div>
+    </div>
+
+    <footer>
+        <div class="first-footer-section">
+            <img src="./img/tronx.svg" alt="logo" width="160">
+        </div>
+        <hr>
+        <div class="second-footer-section">
+            <button class="button button__outlined">
+                Reservar
+            </button>
+            <div class="social">
+                <img src="./img/facebook.svg" alt="fb">
+                <img src="./img/instagram.svg" alt="ig">
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
