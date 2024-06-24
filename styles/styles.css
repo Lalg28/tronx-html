@@ -1,6 +1,6 @@
 .header {
   background: #545454;
-  max-height: 65px;
+  height: 65px;
   padding: 8px 34px;
   display: flex;
   align-items: center;
@@ -12,10 +12,72 @@
 .header .menu {
   display: block;
 }
+.header .close-menu {
+  display: none;
+}
+.header .nav-mobile {
+  display: none;
+  height: calc(100vh - 65px);
+  background: #545454;
+  position: fixed;
+  z-index: 10;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header .nav-mobile ul {
+  padding: 0;
+  margin: 0;
+}
+.header .nav-mobile ul li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.header .nav-mobile ul li a {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 19px;
+  margin-bottom: 32px;
+  text-decoration: none;
+}
+.header .nav-mobile ul li:last-of-type {
+  background: #C40712;
+  width: 179px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.header .nav-mobile ul li:last-of-type a {
+  margin: 0;
+}
+.header .nav-mobile .social {
+  display: flex;
+}
+.header .nav-mobile .social a {
+  display: block;
+  margin-right: 23px;
+}
+.header .nav-mobile .social a img {
+  width: 45px;
+}
+.header .nav-mobile .social a:last-of-type {
+  margin-right: 0;
+}
 @media screen and (min-width: 1024px) {
   .header {
     max-height: 80px;
     padding: 8px 200px;
+  }
+  .header .nav-mobile {
+    display: none;
   }
   .header .menu {
     display: none;
@@ -559,6 +621,7 @@ footer .second-footer-section .social {
   justify-content: space-between;
   align-items: center;
   margin-top: 13px;
+  background: blue;
 }
 @media screen and (min-width: 1024px) {
   footer {

@@ -1,6 +1,6 @@
 .header {
     background: $gray;
-    max-height: 65px;
+    height: 65px;
     padding: 8px 34px;
     display: flex;
     align-items: center;
@@ -14,9 +14,80 @@
         display: block;
     }
 
+    & .close-menu {
+        display: none;
+    }
+
+    & .nav-mobile {
+        display: none;
+        height: calc(100vh - 65px);
+        background: $gray;
+        position: fixed;
+        z-index: 10;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        & ul {
+            padding: 0;
+            margin: 0;
+            & li {
+                list-style: none;
+                margin-bottom: 30px;
+                & a {
+                    color: white;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 19px;
+                    margin-bottom: 32px;
+                    text-decoration: none;
+                }
+
+                &:last-of-type {
+                    background: $red;
+                    width: 179px;
+                    height: 46px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+
+                    & a {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        & .social {
+            display: flex;
+            & a {
+                display: block;
+                margin-right: 23px;
+
+                & img {
+                    width: 45px;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
     @media screen and (min-width: $desktop) {
         max-height: 80px;
         padding: 8px 200px;
+
+        .nav-mobile {
+            display: none;
+        }
 
         & .menu {
             display: none;
@@ -61,6 +132,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
             & a {
                 height: 31px;
 
@@ -106,7 +178,6 @@
         font-size: 34px;
         line-height: 36px;
         width: 195px;
-        // height: 166px;
         margin: 0 0 7px 42px;
         padding-top: 44px;
     }
@@ -626,6 +697,7 @@ footer {
             justify-content: space-between;
             align-items: center;
             margin-top: 13px;
+            background: blue;
         }
     }
 
