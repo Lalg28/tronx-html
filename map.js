@@ -1,15 +1,15 @@
 const initializeMap = () => {
-    var map = L.map('map').setView([20.67485636299717, -103.4297946181008], 16)
+    var map = L.map('map').setView([20.688378431264432, -105.29208653535487], 20)
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        zoom: 15,
+        zoom: 20,
         scrollWheelZoom: false,
-        center: [20.67485636299717, -103.4297946181008],
+        center: [20.688378431264432, -105.29208653535487],
         attribution:
-        '<a href="https://maps.app.goo.gl/P5cAsZ3MLniJ11Uw5" target="_blank">Open on Google Maps</a>',
+        '<a href="https://maps.app.goo.gl/ChyCXFJTszsBCKzR9" target="_blank">Open on Google Maps</a>',
     }).addTo(map)
 
-    L.marker([20.67485636299717, -103.4297946181008]).addTo(map)
+    L.marker([20.688378431264432, -105.29208653535487]).addTo(map)
 }
   
 initializeMap()
