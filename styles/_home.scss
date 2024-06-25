@@ -169,6 +169,8 @@
     max-height: 407px;
     height: 430px;
     backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
 
     & h1{
         margin: 0;
@@ -190,7 +192,6 @@
         font-size: 17px;
         line-height: 22px;
         width: 215px;
-        // height: 47px;
         margin-left: 42px;
     }
 
@@ -698,7 +699,6 @@ footer {
             justify-content: space-between;
             align-items: center;
             margin-top: 13px;
-            background: blue;
         }
     }
 

@@ -5,6 +5,8 @@
     background: url(../img/escuela/escuela-profesional-surf.png) no-repeat center center;
     background-size: cover;
     backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
 
     &::before {
         content: '';
@@ -13,6 +15,7 @@
         width: 100%;
         position: absolute;
         z-index: -1;
+        top: 0;
     }
 
     & .title-container {

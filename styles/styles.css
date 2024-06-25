@@ -150,6 +150,8 @@
   max-height: 407px;
   height: 430px;
   backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
 }
 .hero h1 {
   margin: 0;
@@ -622,7 +624,6 @@ footer .second-footer-section .social {
   justify-content: space-between;
   align-items: center;
   margin-top: 13px;
-  background: blue;
 }
 @media screen and (min-width: 1024px) {
   footer {
@@ -884,6 +885,8 @@ footer .second-footer-section .social {
   display: flex;
   align-items: center;
   backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
 }
 .contacto-hero::before {
   content: "";
@@ -1188,6 +1191,8 @@ footer .second-footer-section .social {
   background: url(../img/escuela/escuela-profesional-surf.png) no-repeat center center;
   background-size: cover;
   backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
 }
 .hero-escuela::before {
   content: "";
@@ -1196,6 +1201,7 @@ footer .second-footer-section .social {
   width: 100%;
   position: absolute;
   z-index: -1;
+  top: 0;
 }
 .hero-escuela .title-container {
   height: 90%;
