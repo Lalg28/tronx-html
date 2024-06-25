@@ -1,10 +1,12 @@
 .header {
+    position: relative;
     background: $gray;
     height: 65px;
     padding: 8px 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 
     & .nav {
         display: none;
@@ -20,17 +22,18 @@
 
     & .nav-mobile {
         display: none;
-        height: calc(100vh - 65px);
+        height: 100vh;
         background: $gray;
         position: fixed;
         z-index: 10;
-        top: 65px;
+        top: 0;
         left: 0;
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        z-index: -1;
 
         & ul {
             padding: 0;
