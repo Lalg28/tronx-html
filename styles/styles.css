@@ -101,6 +101,12 @@
     line-height: 19px;
     margin-right: 64px;
     text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease-in;
+  }
+  .header .nav ul li a:hover {
+    border-color: #C40712;
   }
   .header .nav ul li:last-of-type {
     background: #C40712;
@@ -858,10 +864,11 @@ footer .second-footer-section .social {
   }
   .second-us.second .content h1 {
     padding: 0;
-    max-width: 400px;
+    max-width: 434px;
   }
   .second-us.second .content p {
     padding: 0;
+    max-width: 434px;
   }
   .second-us.second .background-desktop {
     display: block;
@@ -1311,6 +1318,7 @@ section.escuela p strong {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  text-decoration: none;
 }
 .second-section-escuela .apartados .figure-container .figure {
   position: relative;
@@ -1323,8 +1331,15 @@ section.escuela p strong {
   align-items: center;
   color: white;
   margin: 8px 0;
+  transition: background 0.2s ease-in-out;
 }
-.second-section-escuela .apartados .figure-container p > span {
+.second-section-escuela .apartados .figure-container .figure:hover {
+  background-color: #810A11;
+}
+.second-section-escuela .apartados .figure-container p {
+  color: black;
+}
+.second-section-escuela .apartados .figure-container p span {
   color: #C40712;
   font-weight: 700;
 }
@@ -1632,6 +1647,7 @@ section.escuela p strong {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {

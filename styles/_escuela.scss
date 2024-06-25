@@ -145,6 +145,7 @@ section.escuela {
             align-items: center;
             flex-direction: column;
             text-align: center;
+            text-decoration: none;
 
             & .figure {
                 position: relative;
@@ -164,11 +165,20 @@ section.escuela {
                 align-items: center;
                 color: white;
                 margin: 8px 0;
+                transition: background 0.2s ease-in-out;
+
+                &:hover {
+                    background-color: $darkRed;
+                }
             }
 
-            & p > span {
-                color: $red;
-                font-weight: 700;
+            & p {
+                color: black;
+
+                & span {
+                    color: $red;
+                    font-weight: 700;
+                }
             }
         }
     }

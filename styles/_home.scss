@@ -109,6 +109,13 @@
                         line-height: 19px;
                         margin-right: 64px;
                         text-decoration: none;
+                        padding: 5px 0;
+                        border-bottom: 1px solid transparent;
+                        transition: border-color 0.2s ease-in;
+
+                        &:hover {
+                            border-color: $red;
+                        }
                     }
 
                     &:last-of-type {
