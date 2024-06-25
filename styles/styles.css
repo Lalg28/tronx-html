@@ -1472,6 +1472,7 @@ section.escuela p strong {
   font-size: 57px !important;
   font-weight: bold !important;
   font-style: italic !important;
+  line-height: 65px !important;
   background-color: #2f8d46;
   background-image: url(../img/text-bg.png);
   background-repeat: no-repeat;
@@ -1485,7 +1486,7 @@ section.escuela p strong {
 @media screen and (min-width: 1024px) {
   .main-title {
     font-size: 200px !important;
-    line-height: 200px !important;
+    line-height: 220px !important;
   }
 }
 
