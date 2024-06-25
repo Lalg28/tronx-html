@@ -1526,6 +1526,10 @@ section.escuela p strong {
 }
 .columns__right {
   padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .columns__right h1 {
   font-weight: 700;
@@ -1533,6 +1537,7 @@ section.escuela p strong {
   line-height: 34px;
   color: #C40712;
   margin: 50px 0 15px 0;
+  text-align: center;
 }
 .columns__right p {
   font-size: 16px;
@@ -1562,6 +1567,7 @@ section.escuela p strong {
   .columns__right {
     width: 55%;
     padding-left: 100px;
+    align-items: flex-start;
   }
   .columns__right h1 {
     text-align: left;
