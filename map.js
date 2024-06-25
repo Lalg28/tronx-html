@@ -1,5 +1,5 @@
 const initializeMap = () => {
-    var map = L.map('map').setView([20.688378431264432, -105.29208653535487], 20)
+    var map = L.map('map').setView([20.688378431264432, -105.29208653535487], 17)
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         zoom: 20,
