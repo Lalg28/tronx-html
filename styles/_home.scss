@@ -266,7 +266,7 @@
 .button {
     display: flex;
     align-items: center;
-    padding: 10px 60px;
+    padding: 10px 50px;
     font-style: italic;
     font-size: 16px;
     max-height: 45px;
@@ -291,6 +291,10 @@
     @media screen and (min-width: $desktop) {
         font-size: 18px;
         line-height: 50px;
+    }
+
+    @media screen and (max-width: 282px) {
+        font-size: 12px;
     }
 }
 
@@ -587,7 +591,6 @@
 .last-section {
     background: url('../img/surf-banner.png') no-repeat -37rem -10rem;
     background-size: auto 128%;
-    padding: 0 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -602,6 +605,7 @@
         text-align: center;
         color: white;
         margin: 0;
+        padding: 0 60px;
     }
 
     & > img {
@@ -616,6 +620,7 @@
         text-align: center;
         color: white;
         margin: 9px 0 73px;
+        padding: 0 60px;
     }
 
     @media screen and (min-width: $desktop) {

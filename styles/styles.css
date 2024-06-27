@@ -242,7 +242,7 @@
 .button {
   display: flex;
   align-items: center;
-  padding: 10px 60px;
+  padding: 10px 50px;
   font-style: italic;
   font-size: 16px;
   max-height: 45px;
@@ -265,6 +265,11 @@
   .button {
     font-size: 18px;
     line-height: 50px;
+  }
+}
+@media screen and (max-width: 282px) {
+  .button {
+    font-size: 12px;
   }
 }
 
@@ -520,7 +525,6 @@
 .last-section {
   background: url("../img/surf-banner.png") no-repeat -37rem -10rem;
   background-size: auto 128%;
-  padding: 0 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -535,6 +539,7 @@
   text-align: center;
   color: white;
   margin: 0;
+  padding: 0 60px;
 }
 .last-section > img {
   width: 55px;
@@ -547,6 +552,7 @@
   text-align: center;
   color: white;
   margin: 9px 0 73px;
+  padding: 0 60px;
 }
 @media screen and (min-width: 1024px) {
   .last-section {
@@ -927,6 +933,7 @@ footer .second-footer-section .social {
     display: flex;
     align-items: normal;
     justify-content: center;
+    background-size: cover;
   }
   .contacto-hero::before {
     content: "";
@@ -1455,7 +1462,7 @@ section.escuela p strong {
     height: 100%;
   }
   .third-section-escuela .container__left .surf-escuela {
-    background-position: center;
+    background-position: center top;
     height: 100%;
   }
   .third-section-escuela .container__right {
@@ -1463,9 +1470,10 @@ section.escuela p strong {
     top: 0;
     position: absolute;
     width: 100%;
-    background-position: -10rem center;
+    background-position: center center;
     z-index: 1;
     height: 100%;
+    background-size: cover;
   }
   .third-section-escuela .container__right .content {
     display: none;

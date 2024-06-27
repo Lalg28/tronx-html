@@ -41,6 +41,7 @@
         display: flex;
         align-items: normal;
         justify-content: center;
+        background-size: cover;
 
         &::before {
             content: '';

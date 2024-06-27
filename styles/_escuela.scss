@@ -310,7 +310,7 @@ section.escuela {
                 height: 100%;
                  
                 & .surf-escuela {
-                    background-position: center;
+                    background-position: center top;
                     height: 100%;
                 }
             }
@@ -320,9 +320,10 @@ section.escuela {
                 top: 0;
                 position: absolute;
                 width: 100%;
-                background-position: -10rem center;
+                background-position: center center;
                 z-index: 1;
                 height: 100%;
+                background-size: cover;
 
                 & .content {
                     display: none;
