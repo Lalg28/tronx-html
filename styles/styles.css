@@ -556,7 +556,7 @@
 }
 @media screen and (min-width: 1024px) {
   .last-section {
-    background-position-x: center;
+    background-position: center;
   }
   .last-section h1 {
     font-size: 50px;
@@ -583,7 +583,7 @@
   .last-section {
     background-size: cover;
     height: 900px;
-    min-height: 900px;
+    min-height: 765px;
   }
 }
 
@@ -1363,6 +1363,7 @@ section.escuela p strong {
     width: 100%;
     position: relative;
     height: 500px;
+    margin-bottom: 20px;
   }
   .second-section-escuela .container__left {
     position: relative;
@@ -1390,7 +1391,7 @@ section.escuela p strong {
     z-index: 1;
     right: 0;
     height: 600px;
-    background-position: center;
+    background-position: center left;
     width: 60%;
   }
   .second-section-escuela .apartados {
@@ -1400,6 +1401,8 @@ section.escuela p strong {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    position: relative;
+    z-index: 5;
   }
   .second-section-escuela .apartados .figure-container {
     margin: 0 10px;
@@ -1411,6 +1414,11 @@ section.escuela p strong {
   }
   .second-section-escuela button {
     margin-top: 75px;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .second-section-escuela .container {
+    margin-bottom: 100px;
   }
 }
 

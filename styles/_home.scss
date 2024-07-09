@@ -624,7 +624,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-        background-position-x: center;
+        // background-position-x: center;
+        background-position: center;
 
         & h1 {
             font-size: 50px;
@@ -653,7 +654,7 @@
     @media screen and (min-width: $desktop) {
         background-size: cover;
         height: 900px;
-        min-height: 900px;
+        min-height: 765px;
     }
 }
 

@@ -194,6 +194,7 @@ section.escuela {
             width: 100%;
             position: relative;
             height: 500px;
+            margin-bottom: 20px;
 
             &__left {
                 position: relative;
@@ -224,7 +225,7 @@ section.escuela {
                     z-index: 1;
                     right: 0;
                     height: 600px;
-                    background-position: center;
+                    background-position: center left;
                     width: 60%;
                 }
             }
@@ -237,6 +238,8 @@ section.escuela {
             flex-direction: row;
             flex-wrap: wrap;
             padding: 0;
+            position: relative;
+            z-index: 5;
 
             & .figure-container {
                 margin: 0 10px;
@@ -251,6 +254,12 @@ section.escuela {
 
         & button {
             margin-top: 75px;
+        }
+    }
+
+    @media screen and (min-width: $monitor) {
+        & .container {
+            margin-bottom: 100px;
         }
     }
 }
