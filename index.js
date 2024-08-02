@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     // Carruseles
     $('.container__carousel').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         infinite: true,
         slidesToShow: 1,
