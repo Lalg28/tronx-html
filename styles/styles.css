@@ -249,6 +249,10 @@
   color: white;
   line-height: 50px;
   font-weight: 500;
+  text-decoration: none;
+}
+.button:hover {
+  cursor: pointer;
 }
 .button img {
   margin-left: 5px;
